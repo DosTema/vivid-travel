@@ -12,11 +12,11 @@ body {
   text-align: center;
 }
 body a, body a:visited {
-  color: #efefef;
+  color: #000000;
   text-decoration: none;
 }
 body a:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .caption, .slick-slide::before, .slick-slide {
@@ -63,7 +63,7 @@ header nav ul li a {
   padding: 24px 15px;
 }
 header nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 115, 0, 0.699);
 }
 
 .main-slider {
