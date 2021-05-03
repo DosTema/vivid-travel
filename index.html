@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slick.min.css">
-    <link rel="stylesheet" href="vividtravel.css">
+    <link rel="stylesheet" href="sld/slick.min.css">
+    <link rel="stylesheet" href="css/vividtravel.css">
     <link rel="stylesheet" href="tytyt.css">
     
     
@@ -15,21 +15,41 @@
     <!---------------------------------------------------------------------------------------------------------------->
     <!---------------------------------------Сам контент сайта-------------------------------------------------------->
     
-  <header>
-    <h1 style="color: rgb(255, 123, 0);">VIVID TRAVEL</h1>
-    <nav>
+  <header class="bkghed">
+    <img class="loghed" src="img/logo.png">
+    <nav class="ulnav">
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">ГЛАВНАЯ</a></li>
+        <li class="cont"><a class='btr actv' href="#">ГОРЯЩИЕ ТУРЫ</a>
+          <div class="turcont">
+            <a href="#"><img class="flg" src="img/flag/oae.jpeg">ОАЭ</a>
+            <a href="#"><img class="flg" src="img/flag/turkey.jpeg">ТУРЦИЯ</a>
+            <a href="#"><img class="flg" src="img/flag/egipet.jpeg">ЕГИПЕТ</a>
+            <a href="#"><img class="flg" src="img/flag/maldivy.png">МАЛЬДИВЫ</a>
+        </div>
+        </li>
+        <li class="cont"><a class='btr actv' href="#">СТРАНЫ</a>
+          <div class="turcont">
+            <a href="#">ЧЕХИЯ</a>
+            <a href="#">КУБА</a>
+            <a href="#">КАЗАХСТАН</a>
+            <a href="#">КИРГИЗИЯ</a>
+            <a href="#">РОССИЯ</a>
+            <a href="#">ДОМИНИКАНА</a>
+            <a href="#">Другие страны....</a>
+        </div>
+        </li>
+        <li><a href="#">ТУРЫ В РАСРОЧКУ</a></li>
+        <li><a href="#">ЭКСКУРСИИ</a></li>
+        <li><a href="#">О НАС</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
     </nav>
   </header>
   <section class="main-slider">
     <div class="item vimeo" data-video-start="4">
       <iframe class="embed-player slide-media" src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864" width="980" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <p class="caption">Vivid travel</p>
+      <p class="caption">Отправим Вас <br>в любую точку планеты</p>
     </div>
     <div class="item youtube">
       <iframe class="embed-player slide-media" width="980" height="520" src="https://www.youtube.com/embed/QV5EXOFcdrQ?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=QV5EXOFcdrQ&start=1" frameborder="0" allowfullscreen></iframe> 
@@ -43,7 +63,54 @@
     </div>
   </section>
 
-
+<style>
+  .bkghed {
+    background: #ffffff5d;
+    height: 63px;
+  }
+  .loghed {
+    width: 110px;
+    padding-top: 5px;
+  }
+  .turcont {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.turcont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  
+}
+.turcont a:hover {
+    background-color: #f3e2e2;
+}
+.cont:hover .turcont {
+    display: block;
+}
+.cont:hover .btr {
+    background-color: rgba(255, 115, 0, 0.699);
+    color: rgb(255, 255, 255);
+}
+.actv {
+    background-image: url(img/knopok.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+}
+.flg {
+    float: left;
+    height: 15px;
+    width: 21px;
+    margin-right: 10px;
+}
+</style>
 
 
 
@@ -88,9 +155,9 @@
 
 
 
-    
-<script src="jquery-2.2.4.min.js"></script>
-<script src="slick.min.js"></script>
+
+<script src="sld/jquery-2.2.4.min.js"></script>
+<script src="sld/slick.min.js"></script>
 <script src="vividtravel.js"></script>
 </body>
 </html>
