@@ -1,2 +1,2 @@
-# vivid-travel
+# vividtr
 Sait
